@@ -1,0 +1,119 @@
+.page
+	font-family $mL
+	font-weight normal
+	font-size 16px
+	line-height 22px
+	color #000
+	background #fff
+
+.button
+	border none
+	padding-top 15px
+	padding-left 40px
+	padding-right 40px
+	padding-bottom 16px
+	display inline-block
+	vertical-align top
+	font-size 19px
+	text-align center
+	line-height 1
+	color #fff
+	border-radius 25px
+	text-decoration none
+	transition background .3s ease
+
+// titles
+
+.title
+	padding-left 5px
+	font-family $mT
+	font-size 31px
+	line-height 1.2
+	color #4d4d4d
+
+
+.button
+	padding-top 12px
+	padding-bottom 10px
+	background #0113FF
+	color #fff
+	font-size 14px
+	line-height 1
+	font-family $mB
+	border-radius 0
+	&:hover
+		background darken(#0113FF, 10)
+		color #FFF
+
+
+// wysiwyg editor styles
+
+.wysiwyg
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+		margin-bottom 30px
+		font-family $mT
+		line-height 1.4
+	h1
+		font-size 42px
+		+r(768px)
+			font-size 24px
+	h2
+		font-size 20px
+		font-family $mL
+	h3
+		font-size 23px
+		font-family $mL
+	h4
+		font-size 26px
+		font-family $mL
+	h5
+		font-size 26px
+		font-family $mL
+	p
+		margin-bottom 36px
+		font-size 17px
+		line-height 21px
+		b
+			font-weight $mM
+	pre
+		margin-bottom 30px
+		padding-bottom 25px
+
+	em
+		font-family $mB
+
+
+	ul,
+	ol
+		margin-bottom 30px
+	ul
+		li
+
+	img
+		margin-bottom 20px
+		max-width 100%
+		height auto
+
+	blockquote
+		position relative
+		margin-bottom 30px
+		padding-top 10px
+		padding-bottom 10px
+		padding-left 20px
+		font-family $mT
+		font-size 17px
+		p
+			margin-bottom 0
+			font-family $mL
+
+	a
+		text-decoration none
+		&:hover
+			text-decoration underline
+
