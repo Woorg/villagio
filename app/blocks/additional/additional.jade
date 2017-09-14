@@ -1,0 +1,29 @@
+include ../slider/slider
+
+mixin additional()
+	.additional
+		.container
+			.row
+				ul.additional__control
+					li.additional__control-item.additional__control-item_active
+						a.additional__control-link(href="#inside" data-target="inside")
+							span Внутри дома
+					li.additional__control-item
+						a.additional__control-link(href="#outside" data-target="outside")
+							span Снаружи дома
+
+		+slider-additional()
+
+
+
+mixin additional-second()
+	.additional.additional_second
+		.container
+			.row
+				h2.additional__title Посёлок «Madison Park»
+				ul.additional__control
+					li.additional__control-item.additional__control-item_active
+						a.additional__control-link(href="#inside" data-target="inside")
+							span Описание посёлка
+
+		+slider-additional-second()

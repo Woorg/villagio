@@ -1,49 +1,108 @@
+html,
+body
+	height 100%
+
+
+.in
+	margin-right auto
+	margin-left auto
+	padding-left 25px
+	padding-right 25px
+	.row
+		margin-left -25px
+		margin-right -25px
+	+rmin(780px)
+		width 780px
+	+rmin(990px)
+		width 990px
+	+rmin(1110px)
+		width 990px
+
+// .in-fluid
+// 	padding-left 25px
+// 	padding-right 25px
+
+
+.vill-row
+	margin-left -25px
+	margin-right -25px
+.vill-col
+	padding-left 25px
+	padding-right 25px
+
+
 .page
-	font-family $mL
+	font-family $cR
 	font-weight normal
-	font-size 16px
-	line-height 22px
+	font-size 20px
+	line-height 28px
 	color #000
 	background #fff
 
 .button
 	border none
-	padding-top 15px
-	padding-left 40px
-	padding-right 40px
-	padding-bottom 16px
+	padding 2px 50px 5px
 	display inline-block
 	vertical-align top
-	font-size 19px
 	text-align center
 	line-height 1
 	color #fff
-	border-radius 25px
+	background #AD172B
+	letter-spacing .3px
+	border-radius 20px
 	text-decoration none
-	transition background .3s ease
+	tr(background .3s ease)
+	&:hover
+		background darken(#AD172B , 05)
+		color #fff
+
+.button_main
+	font-size 25px
+	line-height 65px
+	letter-spacing .7px
+	border-radius 50px
+	+r(780px)
+		padding-top 2px
+		padding-right 35px
+		padding-left 35px
+		padding-bottom 0
+		font-size 20px
+		line-height 40px
+.button_second
+	padding 35px 32px
+	font-size 18px
+	letter-spacing .5px
+	border-radius 0
+	text-decoration none
+	&:hover,
+	&:focus
+		color #FFF
+		text-decoration none
+
+.button_third
+	border none
+	padding 15px 32px
+	background #AD172B
+	font-size 20px
+	letter-spacing .5px
+	border-radius 0
+	text-decoration none
+	border-radius 30px
+	&:hover,
+	&:focus
+		color #FFF
+		text-decoration none
+
 
 // titles
 
 .title
 	padding-left 5px
-	font-family $mT
+	font-family $cR
 	font-size 31px
 	line-height 1.2
 	color #4d4d4d
 
-
-.button
-	padding-top 12px
-	padding-bottom 10px
-	background #0113FF
-	color #fff
-	font-size 14px
-	line-height 1
-	font-family $mB
-	border-radius 0
-	&:hover
-		background darken(#0113FF, 10)
-		color #FFF
 
 
 // wysiwyg editor styles
@@ -57,36 +116,79 @@
 	h5,
 	h6
 		margin-bottom 30px
-		font-family $mT
+		font-family $cR
 		line-height 1.4
 	h1
+		margin-bottom 45px
 		font-size 42px
+		font-family $cR
+		+r(990px)
+			margin-top 20px
+			font-size 55px
+			line-height 65px
+			letter-spacing 2.5px
+		+r(780px)
+			margin-top 10px
+			margin-bottom 21px
+			// padding-left 25px
+			// padding-right 25px
+			font-size 37px
+			line-height 47px
+			letter-spacing 0
 		+r(768px)
 			font-size 24px
+
 	h2
-		font-size 20px
-		font-family $mL
+		margin-bottom 25px
+		font-size 30px
+		font-family $cR
+		line-height 40px
+		+r(780px)
+			font-size 20px
+			line-height 30px
+			letter-spacing 1.3px
+		+r(480px)
+			font-size 24px
 	h3
-		font-size 23px
-		font-family $mL
+		margin-bottom 25px
+		font-size 30px
+		font-family $cR
+		line-height 40px
+		letter-spacing 1.3px
+		// font-family $mL
 	h4
+		margin-bottom 25px
 		font-size 26px
-		font-family $mL
+		font-family $cR
+		// font-family $mL
 	h5
+		margin-bottom 25px
 		font-size 26px
-		font-family $mL
+		font-family $cR
+		// font-family $mL
 	p
 		margin-bottom 36px
-		font-size 17px
-		line-height 21px
+		font-family $cR
+		font-size 20px
+		line-height 28px
+		letter-spacing .4px
+		+r(780px)
+			margin-bottom 10px
+			font-size 16px
 		b
-			font-weight $mM
+			font-size 20px
+			font-family $cR
+	b
+		font-size 20px
+		font-family $cR
+
+
 	pre
 		margin-bottom 30px
 		padding-bottom 25px
 
 	em
-		font-family $mB
+		font-family $cR
 
 
 	ul,
@@ -94,6 +196,7 @@
 		margin-bottom 30px
 	ul
 		li
+			margin-bottom 20px
 
 	img
 		margin-bottom 20px
@@ -106,11 +209,11 @@
 		padding-top 10px
 		padding-bottom 10px
 		padding-left 20px
-		font-family $mT
+		font-family $cR
 		font-size 17px
 		p
 			margin-bottom 0
-			font-family $mL
+			font-family $cR
 
 	a
 		text-decoration none

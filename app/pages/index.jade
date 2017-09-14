@@ -1,13 +1,39 @@
 extends /blocks/layout-default/layout-default
 
-include /blocks/header/header
-include /blocks/footer/footer
+
+include /blocks/section/section
+include /blocks/slider/slider
+include /blocks/menu/menu
+include /blocks/desc/desc
+include /blocks/additional/additional
+include /blocks/map/map
+include /blocks/offer/offer
+include /blocks/form/form
+
+
+
+
 
 
 block head
 	- var pageTitle = 'Дом у озера';
 
 block content
-	+header()
-
-	+footer()
+	+section()._object._main
+		+slider()
+	+menu()
+	+section()._desc
+		+desc()
+	+section()._additional#additional-1
+		+additional()
+	+section()._additional-second#additional-2
+		+additional-second()
+	+section()._map
+		+map()#map
+	//- +section()._offer
+	//- 	.container
+	//- 		.row
+	//- 			.col-xs-30.col-sm-12
+	//- 				+offer()
+	//- 			.col-xs-30.col-sm-18
+	//- 				+form()#feedback-form

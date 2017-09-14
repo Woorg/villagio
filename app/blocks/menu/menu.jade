@@ -1,0 +1,21 @@
+include ../icon/icon
+
+mixin menu()
+	.menu
+		.container
+			.row
+				.menu__left.hidden-xs.hidden-sm.visible-md.visible-lg
+					ul.menu__list
+						li.menu__item
+							a.menu__link(href="#additional-1") Описание дома
+						li.menu__item
+							a.menu__link(href="#additional-2") О посёлке
+						li.menu__item
+							a.menu__link(href="#link")  Другие дома
+
+				.menu__right
+					a.phone.phone_menu.menu__phone(href="tel:74952667016")
+						+icon('phone-icon', true).phone__icon
+						span.phone__val +7 495 266 70 16
+					a.menu__action.button.button_second(href="#feedback-form") Оставить заявку
+

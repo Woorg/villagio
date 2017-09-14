@@ -1,0 +1,196 @@
+.slider
+	display block
+	height 100%
+	.slider__item
+		width 100%
+		height 100%
+	.slider__image
+		display block
+		width 100%
+		height 100%
+		background-position 50% 50%
+		background-size cover
+	&__col
+		padding-top 20px
+	&__content-w
+		position absolute
+		z-index 1
+		top 0
+		left 0
+		width 100%
+		height 100%
+	&__content
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		color #FFF
+		transform-style preserve-3d
+		// @extends .in
+		+r(780px)
+			position static
+			transform none
+			text-align center
+	&__link
+		height 100%
+		cursor pointer
+	&__title
+		margin-top 15px
+		margin-bottom 45px
+		font-size 70px
+		line-height 90px
+		letter-spacing 4.2px
+		text-transform uppercase
+		text-shadow -1px 0px 0 rgba(0, 0, 0, 0.5), 0px 2px 0 rgba(0, 0, 0, 0.5)
+		+r(990px)
+			margin-top 20px
+			font-size 55px
+			line-height 65px
+			letter-spacing 2.5px
+		+r(780px)
+			margin-top 10px
+			margin-bottom 21px
+			// padding-left 25px
+			// padding-right 25px
+			font-size 37px
+			line-height 47px
+			letter-spacing 0
+	&__text
+		margin-top 20px
+		@extends .wysiwyg
+		// padding-left 30px
+		font-size 30px
+		line-height 40px
+		text-shadow -1px 0px 0 rgba(0, 0, 0, 0.5), 0px 2px 0 rgba(0, 0, 0, 0.5)
+
+	&__block
+		// margin-left 30px
+		padding 30px 30px 30px
+		background #FFF
+		color #000
+		@extends .wysiwyg
+
+	.sp-slides,
+	.sp-slides-container
+		height 100%
+	.sp-arrows
+		opacity 1
+		+r(1370px)
+			display none
+		.sp-arrow
+			z-index 100
+			width 120px
+			height 65px
+			opacity .6
+			display block
+			cursor pointer
+			tr(all .2s ease-in-out)
+			&:before,
+			&:after
+				hide-text()
+			&:hover
+				opacity 1
+		.sp-previous-arrow
+			left 50px
+			margin 0
+			background url("../images/general/arrow-left.svg") 0 0 / cover no-repeat
+		.sp-next-arrow
+			right 50px
+			margin 0
+			background url("../images/general/arrow-left.svg") 0 0 / cover no-repeat
+	.sp-buttons
+		position absolute
+		z-index 1
+		bottom 30px
+		+r(990px)
+			display none
+	.sp-button
+		margin-left 30px
+		width 20px
+		height 20px
+		border 2px solid #fff
+		border-radius 50%
+		&:first-child
+			margin-left 0
+	.sp-selected-button
+		background #FFF
+
+.sp-full-screen-button
+	z-index 1
+	top 15px
+	right 20px
+	opacity 1
+	&:before
+		color #FFF
+
+.slider_main
+	height 100%
+.slider_additional
+	min-height 350px
+	overflow hidden
+	.slider__content-w
+		position static
+		z-index 0
+		top 0
+		left 0
+		width auto
+		height auto
+		cursor pointer
+		// +r(780px)
+		// 	position absolute
+		// 	top auto
+		// 	bottom 0
+		&:after
+			position absolute
+			z-index 0
+			left 0
+			bottom 0
+			width 100%
+			height 60%
+			background linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%)
+			content ''
+			// +r(780px)
+			// 	height 80%
+
+	.slider__content
+		// @extends .in
+		z-index 1
+		top auto
+		bottom 0
+		padding 25px
+		padding-bottom 90px
+		color #FFF
+		transform translate(-50%, 0)
+		@extends .wysiwyg
+		font-size 20px
+		+r(990px)
+			position absolute
+			// left 0
+			padding-bottom 50px
+			// transform translate(0, 0)
+		+r(780px)
+			padding-bottom 25px
+			left 0
+			transform none
+
+	.sp-button
+		margin-left 0
+		margin 15px
+		width 15px
+		height 15px
+	.sp-arrows
+		+rmin(300px)
+			left 10px
+			right 10px
+			width auto
+			display block
+		.sp-arrow
+			width 60px
+			height 34px
+			// +r(780px)
+			// 	width 30px
+			// 	height 17px
+		.sp-previous-arrow
+			left 0
+		.sp-next-arrow
+			right 0

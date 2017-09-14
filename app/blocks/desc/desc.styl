@@ -1,0 +1,59 @@
+.desc
+	display block
+	color #000000
+	&__row
+		margin-bottom 35px
+	&__title
+		margin-top 0
+		margin-bottom 25px
+		font-size 30px
+		line-height 40px
+		font-family $cR
+		letter-spacing 1.3px
+		+r(780px)
+			font-size 20px
+			line-height 30px
+			letter-spacing 1.3px
+	&__location
+		margin-bottom 25px
+		font-size 20px
+		line-height 30px
+		letter-spacing .4px
+
+	&__link
+		text-decoration underline
+		color inherit
+		&:hover
+			color #000000
+			text-decoration none
+	&__number
+		margin-bottom 25px
+	&__price
+		margin-bottom 10px
+
+
+	&__features
+		margin 0
+		padding 0
+		list-style none
+
+	&__features-item
+		margin-bottom 25px
+
+	&__features-icon,
+	&__features-text
+		display inline-block
+		vertical-align middle
+		+r(780px)
+			display block
+			text-align center
+	&__features-icon
+		margin-right 10px
+		width 80px
+		height 80px
+		+r(780px)
+			margin auto
+	&__features-text
+		font-size 20px
+		line-height 26px
+		letter-spacing .4px

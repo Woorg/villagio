@@ -1,0 +1,9 @@
+mixin form()
+	.form
+		h2.form__title Или оставьте заявку
+		p.form__text И мы сразу же вам перезвоним!
+		.form__w
+			form(action="", method="post")
+				input.form__field.form__field_text(type="text", value="", placeholder="Имя")
+				input.form__field.form__field_text.form__field_phone(type="text", value="", placeholder="Телефон")
+				input.form__field.form_submit.button.button_third(type="submit", value="Отправить")

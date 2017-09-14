@@ -1,0 +1,66 @@
+.phone
+	display block
+	color #FFF
+	text-decoration none
+	&__icon-w,
+	&__val
+		display inline-block
+		vertical-align middle
+		transform-style preserve-3d
+	&__icon-w
+		transform rotate(107deg)
+	&__icon
+		width 120px
+		height 120px
+		opacity .8
+		tr(opacity .2s ease)
+		animation-play-state paused
+		animation-name enlarge2, pulse
+		animation-iteration-count infinite
+		animation-duration .3s
+		animation-fill-mode both
+		+r(990px)
+			width 80px
+			height 80px
+	&:hover
+		color #FFF
+		text-decoration none
+		.phone__icon
+			animation-play-state running
+			opacity 1
+
+
+	&__val
+		padding-top 4px
+		font-size 23px
+
+	&.phone_menu
+		display inline-block
+		color #000
+		+r(990px)
+			text-align center
+		&:hover
+			color inherit
+		.phone__icon
+			width 40px
+			height 40px
+		.phone__icon,
+		.phone__val
+			display inline-block
+			vertical-align middle
+		.phone__icon
+			visibility hidden
+			margin-right 10px
+			+r(990px)
+				visibility visible
+		.phone__val
+			font-size 22px
+			letter-spacing .5px
+
+
+.phone_third
+	color inherit
+	text-decoration underline
+	&:hover
+		color inherit
+		text-decoration none
