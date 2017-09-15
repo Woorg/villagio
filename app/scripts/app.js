@@ -20,9 +20,9 @@ import 'slider-pro';
 			touchSwipe: true,
 			width: '100%',
 			height: '100%',
-			visibleSize: '100%'
-			// forceSize: 'fullWidth'
-			// slideDistance: 0,
+			visibleSize: '100%',
+			// forceSize: 'fullWidth',
+			// slideDistance: 0
 
 		});
 
